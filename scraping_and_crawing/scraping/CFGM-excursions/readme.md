@@ -1,26 +1,19 @@
-# Web Scraping for Excursion Data: Python Script
+# Python Web Scraping Script Explanation
 
-## Overview
+This script is a Python program designed to scrape data from a specific website, extract relevant information, and save it in a JSON file. Below is a detailed breakdown of the script:
 
-This Python script is designed to scrape excursion data from a website dedicated to educational programs. The script extracts information related to educational modules and the excursions associated with each program. The final data is stored in a structured JSON file, making it easy to analyze or share.
+## Script Overview
 
-### Libraries Used:
+The script performs the following tasks:
+1. **Fetches HTML content** from a specified URL.
+2. **Parses the HTML** to extract specific data.
+3. **Navigates through multiple pages** to gather detailed information.
+4. **Stores the collected data** in a structured JSON file.
 
-- **requests**: This library is used for sending HTTP requests to retrieve the HTML content of the web pages.
-- **BeautifulSoup** (from `bs4`): This library helps parse and navigate through the HTML content, allowing us to extract specific elements such as links, text, and attributes.
-- **urljoin** (from `urllib.parse`): It ensures that the URLs scraped are absolute by converting relative URLs to fully qualified URLs.
-- **json**: This library is used to save the scraped data in a JSON format, making it easy to process later.
+## Dependencies
 
----
-
-## Script Breakdown
-
-### 1. **Import Libraries**
-The script starts by importing necessary libraries:
-
-```python
-import requests
-from bs4 import BeautifulSoup
-from urllib.parse import urljoin
-import json
-```
+The script uses the following Python libraries:
+- `requests`: To make HTTP requests and fetch web content.
+- `BeautifulSoup` from `bs4`: To parse HTML and extract data.
+- `urljoin` from `urllib.parse`: To construct full URLs from relative paths.
+- `json`: To handle JSON data and save it to a file.
